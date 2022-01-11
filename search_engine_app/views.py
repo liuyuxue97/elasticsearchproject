@@ -39,7 +39,7 @@ def searchluoji(request):
     hit_list = []
     for hit in response["hits"]["hits"]:
         hit_dict = {}
-        # hit_dict["api_name"] = hit["_source"]["API name"]
+        hit_dict["api_name"] = hit["_source"]["API name"]
         hit_dict["architectural_style"] = hit["_source"]["Architectural Style"]
         hit_dict["category"] = hit["_source"]["Category"]
         hit_dict["description"] = hit["_source"]["Description"]
